@@ -7,9 +7,9 @@ function randomNumber1(){
     let randomDiceImage = "dice" + randomNumber + ".png"; //dice1.png - dice6.png
     let randomImageSource = "images/" + randomDiceImage; //images/dice1.png - images/dice6.png
     document.querySelectorAll("img")[0].setAttribute("src", randomImageSource);
+    return randomNumber;
 }
 
-randomNumber1();
 
 function randomNumber2(){
     //Math.floor arrotonda all'intero più vicino
@@ -20,6 +20,17 @@ function randomNumber2(){
     let randomDiceImage = "dice" + randomNumber + ".png"; //dice1.png - dice6.png
     let randomImageSource = "images/" + randomDiceImage; //images/dice1.png - images/dice6.png
     document.querySelectorAll("img")[1].setAttribute("src", randomImageSource);
+    return randomNumber;
 }
 
-randomNumber2();
+
+let number1 = randomNumber1();
+let number2 = randomNumber2();
+
+if(number1 > number2){
+    document.querySelector("h1").innerHTML = "Hai vinto";
+} else if (number1 < number2){
+    document.querySelector("h1").innerHTML = "Hai Perso"
+} else {
+    document.querySelector("h1").innerHTML = "Pareggio"
+}
