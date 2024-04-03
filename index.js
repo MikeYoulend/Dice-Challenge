@@ -28,9 +28,9 @@ let number1 = randomNumber1();
 let number2 = randomNumber2();
 
 if(number1 > number2){
-    document.querySelector("h1").innerHTML = "Hai vinto";
+    document.querySelector("h1").innerHTML = "👈🏼Player 1 ha vinto ";
 } else if (number1 < number2){
-    document.querySelector("h1").innerHTML = "Hai Perso"
+    document.querySelector("h1").innerHTML = "Player 2 ha vinto👉🏼"
 } else {
-    document.querySelector("h1").innerHTML = "Pareggio"
+    document.querySelector("h1").innerHTML = "🙅🏼Pareggio🙅🏼‍♂️"
 }
