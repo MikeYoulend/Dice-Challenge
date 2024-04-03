@@ -6,7 +6,7 @@ function randomNumber1(){
 
     let randomDiceImage = "dice" + randomNumber + ".png"; //dice1.png - dice6.png
     let randomImageSource = "images/" + randomDiceImage; //images/dice1.png - images/dice6.png
-    document.querySelectorAll("img")[0].setAttribute("src", randomImageSource);
+    document.querySelectorAll("img")[0].setAttribute("src", randomImageSource); //Prendo la prima img[0]
     return randomNumber;
 }
 
@@ -19,7 +19,7 @@ function randomNumber2(){
 
     let randomDiceImage = "dice" + randomNumber + ".png"; //dice1.png - dice6.png
     let randomImageSource = "images/" + randomDiceImage; //images/dice1.png - images/dice6.png
-    document.querySelectorAll("img")[1].setAttribute("src", randomImageSource);
+    document.querySelectorAll("img")[1].setAttribute("src", randomImageSource); //prendo la seconda img[1] 
     return randomNumber;
 }
 
